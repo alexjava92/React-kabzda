@@ -3,5 +3,26 @@
     "@types/styled-components": "^5.1.28",
     "chart.js": "^4.4.0",
     "styled-components": "^6.0.8"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.15",
+    "@storybook/addon-essentials": "7.4.5",
+    "@storybook/addon-interactions": "7.4.5",
+    "@storybook/addon-links": "7.4.5",
+    "@storybook/addon-onboarding": "1.0.8",
+    "@storybook/blocks": "7.4.5",
+    "@storybook/react": "7.4.5",
+    "@storybook/react-vite": "^7.4.5",
+    "@storybook/react-webpack5": "7.4.5",
+    "@storybook/testing-library": "0.2.1",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.4.5"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   }
 }
