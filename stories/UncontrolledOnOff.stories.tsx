@@ -19,6 +19,6 @@ export const OffMode = () => <UncontrolledOnOff onChange={callback} isActive={fa
 
 export const ModeChanging = () => {
     const [value, setValue] = useState<boolean>(true)
-    return <UncontrolledOnOff on={value} onChange={setValue}  isActive={value}/>
+    return <UncontrolledOnOff onChange={setValue}  isActive={value}/>
 }
 

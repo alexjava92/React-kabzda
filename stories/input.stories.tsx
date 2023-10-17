@@ -15,7 +15,7 @@ export const ControlledInputFixedValue = () => <input value={"it-incubator"}/>
 export const TrackValueOfUncontrolledInput = () => {
     const [value, setValue] = useState("")
 
-    const onChange = (e) => {
+    const onChange = (e: any) => {
         const actualValue = e.currentTarget.value
         setValue(actualValue)
     }
@@ -27,7 +27,7 @@ export const GetValueOfUncontrolledInputByButtonPress = () => {
     const inputRef = useRef(null)
 
     const save = () => {
-        const el = inputRef.current as HTMLInputElement;
+        const el = inputRef.current as unknown as HTMLInputElement;
         setValue(el.value)
     }
 
